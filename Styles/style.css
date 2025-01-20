@@ -4,3 +4,102 @@
     font-family: "Quicksand", serif;
     box-sizing: border-box;
   }
+  .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav{
+    width: 1160px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px 0; */
+  }
+  .home-icon{
+    display: flex;
+    flex-direction: row;
+
+  }
+  .nav-container{
+    width: 387px;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  #school{
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+    font-weight: 700;
+  }
+  #home{
+    color: rgb(254, 163, 1);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #about
+  {
+    color: rgb(1, 172, 253);
+    font-weight: 500;
+  }
+  #facilities{
+    color: rgb(5, 212, 223);
+    font-weight: 500;
+  }
+  #admission{
+    color: rgb(93, 88, 239);
+    font-weight: 500;
+  }
+  .contact-button{
+    width: 197px;
+    height: 50px;
+    gap: 10;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  /* Banner Section */
+  .banner-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner{
+    width: 1160px;
+    display: flex;
+    align-items: center;
+  }
+  .banner-main-text{
+    font-size: 56px;
+    font-weight: 700;
+  }
+  #Empowering{
+    color:  rgb(254, 163, 1);
+  }
+  #towards-vision{
+    color: rgb(1, 172, 253);
+  }
+  #banner-paragraph{
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+
+  }
+  .enroll-button{
+    width: 197px;
+    height: 50px;
+    gap: 10;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  /* Body section-Standard Curriculum */
