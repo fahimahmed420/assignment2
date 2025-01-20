@@ -65,6 +65,7 @@
   }
   /* Banner Section */
   .banner-container{
+    background: rgb(247, 247, 247);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,3 +104,170 @@
     font-weight: 600;
   }
   /* Body section-Standard Curriculum */
+  .standard-curriculum{
+    background: url(../assets/bg.png);
+    width: 1160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .div-container{
+    display: flex;
+  }
+  .divs-headline{
+    color: rgb(32, 32, 32);
+    font-size: 24.52px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .divs-paragraph{
+    color: rgb(128, 128, 128);
+    font-size: 15.09px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .readmore1{
+    color: rgb(100, 200, 255);
+    font-size: 15.09px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+  .readmore2{
+    color: rgb(240, 170, 0);
+    font-size: 15.09px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+  .readmore3{
+    color: rgb(135, 0, 255);
+    font-size: 15.09px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* button for next page and previous page */
+  .button-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .arrow{
+    background-color: rgb(254, 163, 1);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 15px;
+    transition: 0.4s ease;
+}
+.arrow:hover{
+    box-shadow: 0 0 20px 20px black;
+}
+.arrow div{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-top: 8px solid white;
+    border-left: 8px solid white;
+    transform: rotate(45deg);
+    left: 27.5px;
+    top: 35px;
+}
+.right{
+    transform: rotate(90deg);
+}
+.left{
+    transform: rotate(-90deg);
+}
+
+
+/* Section-Our Stories */
+.our-stories{
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 0px;
+}
+.story-container{
+    display: grid;
+    grid-template-columns:44% 28% 28%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+     "story1 story2 story3"
+     "story1 story4 story5"
+
+}
+.story1{
+    grid-area: story1;
+}
+.story2{
+    grid-area: story2;
+}
+.story3{
+    grid-area: story3;
+}
+.story4{
+    grid-area: story4;
+}
+.story5{
+    grid-area: story5;
+}
+
+.view-all-button{
+    width: 197px;
+    height: 50px;
+    gap: 10;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+
+  /* Footer section */
+  footer{
+    width: 1440px;
+    height: 519px;
+    background: rgb(1, 172, 253);
+  }
+  .footer-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 123px 228.09px 174px 140px;
+  }
+  .footer-left-part{
+  }
+  .left-part-contents{
+    display: flex;
+  }
+  .footer-middle-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about-keep{
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+  }
+  .footer-headline{
+    color: rgb(255, 255, 255);
+font-size: 42.14px;
+font-weight: 700;
+line-height: 39.51px;
+  }
+  .footer-paragraph{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 400;
+  }
