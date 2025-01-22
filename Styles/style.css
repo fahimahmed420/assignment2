@@ -290,7 +290,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 0px;
+    padding: 0px 0px;
 }
 .our-stories-headline{
     color: rgb(0, 0, 0);
@@ -382,6 +382,7 @@ font-weight: 700;
     font-size: 20px;
     font-weight: 600;
     transition: 0.5s;
+    margin: 40px;
   }
   .view-all-button:hover{
     font-size: 25px;
@@ -412,6 +413,7 @@ font-weight: 700;
     padding: 123px 228.09px 174px 140px;
   }
   .footer-left-part{
+    width: 399px;
   }
   .left-part-contents{
     display: flex;
@@ -435,6 +437,9 @@ font-weight: 700;
 line-height: 39.51px;
   }
   .footer-paragraph{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 400;
@@ -459,15 +464,23 @@ line-height: 39.51px;
 
 
 
+
+
+
+
+  
+
   .hide{
-    display: none;
+    display: none;   /* this tag is using to hide the navbar icon*/
   }
 
   /* Responsive Style */
   @media screen and (max-width:390px) {
     *{
     }
-   
+    .hide{
+      display:block;
+    }
     .nav-container{
       display: none;
     }
@@ -478,12 +491,18 @@ line-height: 39.51px;
       display: none;
     }
     nav{
+      margin: 0 16px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
+    .school-bag-icon{
+      position: static;
+    }
     .header{
+      padding-bottom: 20px;
       border-bottom: 0.5px solid rgb(254, 163, 1);
+      margin-bottom: 30px;
     }
 
 
@@ -499,7 +518,13 @@ line-height: 39.51px;
     justify-content: center;
 
   }
+  .banner-img{
+    width: 336.58px;
+height: 413px;
+  }
     .banner-main-text{
+      align-items: center;
+      text-align: center;
       font-size: 32px;
       font-weight: 700;
     }
@@ -511,6 +536,15 @@ line-height: 39.51px;
       width: 131px;
       height: 42px;
       font-size: 16px;
+    }
+    .banner-text-container{
+      width: 357px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      text-align: center;
     }
 
 
@@ -544,6 +578,7 @@ line-height: 39.51px;
       align-content: center;
       text-align: center;
     }
+    
     .our-stories-headline{
       font-size: 26px;
       font-weight: 700;
@@ -613,8 +648,32 @@ line-height: 39.51px;
     
 
     /* Footer */
-
-
+    .footer-section{
+      display:flex ;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .footer-left-part{
+      width: 358px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .footer-middle-part{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .footer-last-part{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+.about-keep{
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
 
 
 
