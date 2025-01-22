@@ -3,6 +3,9 @@
 *{
     font-family: "Quicksand", serif;
     box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
   }
   .header{
     display: flex;
@@ -23,13 +26,18 @@
 
   }
   .school-bag-icon{
-
+    position: relative;
+    width: 62px;
+    height: 62px;
+    right: 10px;
+    top: 12px;
   }
   .nav-container{
     width: 387px;
     display: flex;
     justify-content: space-evenly;
-
+    align-items: center;
+    gap: 40px;
   }
   #school{
     color: rgb(17, 17, 17);
@@ -66,12 +74,18 @@
     font-size: 20px;
     font-weight: 600;
     transition: .5s ease;
+    margin-top: 12px;
   }
   .contact-button:hover{
     font-size: 25px;
     background-color: black;
     box-shadow: 0 0 10px 10px black;
   }
+
+
+
+
+
   /* Banner Section */
   .banner-container{
     /* background: rgb(247, 247, 247); */
@@ -112,13 +126,17 @@
     font-size: 20px;
     font-weight: 600;
     transition: .5s ease;
+    margin-top: 24px;
   }
   .enroll-button:hover{
     font-size: 25px;
-    color: black;
-    background-color:  rgb(254, 163, 1);
-    box-shadow: 0 0 10px 10px  rgb(254, 163, 1);
+    box-shadow: 0 0 10px 10px  black;
   }
+
+
+
+
+
   /* Body section-Standard Curriculum */
   .standard-curriculum{
     background: url(../assets/bg.png);
@@ -159,7 +177,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: 10px;
+    text-align: center;
   }
  
   .div2{
@@ -175,6 +194,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    text-align: center;
   }
   .div3{
     box-sizing: border-box;
@@ -189,18 +210,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    text-align: center;
   }
   .divs-headline{
     color: rgb(32, 32, 32);
     font-size: 24.52px;
     font-weight: 700;
-    text-align: center;
   }
   .divs-paragraph{
     color: rgb(128, 128, 128);
     font-size: 15.09px;
     font-weight: 500;
-    text-align: center;
   }
   .readmore1{
     color: rgb(100, 200, 255);
@@ -260,6 +281,9 @@
 }
 
 
+
+
+
 /* Section-Our Stories */
 .our-stories{
     background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
@@ -277,51 +301,76 @@
     margin: 80px 0px;
 }
 .story-container{
-    display: grid;
-    grid-template-columns:44% 28% 28%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-     "story1 story2 story3"
-     "story1 story4 story5"
-
+  width: 1160px;
+  /* height: 630.52px; */
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  padding: 0 0 100px 0;
 }
-.story1{
-    grid-area: story1;
-    /* position: relative; */
+.stories-img{
+  border-radius: 16px 16px 0 0;
+}
+
+.story-card1{
     width: 540.27px;
     height: 630.52px;
     border-radius: 16px;
     background: rgb(255, 255, 255);
+    text-align: center;
 }
-.story2{
-    grid-area: story2;
-    width: 290.69px;
-    height: 301.61px;
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
+.story-card1:hover{
+  transition: 0.5s;
+  transform: translateY(-7px);
 }
-.story3{
-    grid-area: story3;
-    width: 290.69px;
-height: 301.61px;
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
+.date{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 25px;
+  width: 174.51px;
+  height: 47.93px;
+  border-radius: 47.93px;
+  background: rgb(60, 216, 232);
 }
-.story4{
-    grid-area: story4;
-    width: 290.69px;
-height: 301.61px;
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
+.story-card-contains{
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  padding-left: 38px;
+  padding-right: 54px;
 }
-.story5{
-    grid-area: story5;
-width: 290.69px;
-height: 301.61px;
-    border-radius: 16px;
-    background: rgb(255, 255, 255);
+.story2-5-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
 }
-
+.story-card2-5{
+  width: 290.69px;
+  height: 301.61px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+.story-card2-5:hover{
+  transition: 0.5s;
+  transform: translateY(-7px);
+}
+.date2{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 25px;
+  width: 174.51px;
+  height: 38.35px;
+  border-radius: 47.93px;
+  background: rgb(149, 178, 38);
+}
+.story2-5-headlines{
+  font-size: 15.34px;
+font-weight: 700;
+}
 .view-all-button{
     width: 197px;
     height: 50px;
@@ -333,14 +382,30 @@ height: 301.61px;
     color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: 600;
+    transition: 0.5s;
+  }
+  .view-all-button:hover{
+    font-size: 25px;
+    box-shadow: 0 0 10px 10px  black;
   }
 
 
+
+
   /* Footer section */
+  /* .footer-section{ in case footer needs adjustment
+  } */
   footer{
-    width: 1440px;
-    height: 519px;
-    background: rgb(1, 172, 253);
+    position: relative;
+     width: auto;
+     background: rgb(1, 172, 253);
+  }
+  .school-bag-icon2{
+    position: relative;
+    width: 82px;
+    height: 82px;
+    right: 10px;
+    top: 30px;
   }
   .footer-section{
     display: flex;
@@ -381,6 +446,14 @@ line-height: 39.51px;
     font-weight: 500;
     text-decoration: none;
   }
+  .footer-anchor:hover{
+    color: black;
+    font-size:25px ;
+  }
   .footer-img-links{
     padding-top: 15px;
+  }
+  .footer-img-links:hover{
+    transition: 0.5s;
+    transform: scale(1.5);
   }
