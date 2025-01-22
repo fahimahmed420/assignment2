@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+/* Responsive style at last */
 *{
     font-family: "Quicksand", serif;
     box-sizing: border-box;
@@ -244,7 +244,6 @@
     text-align: center;
     text-decoration: none;
   }
-
   /* button for next page and previous page */
   .button-container{
     display: flex;
@@ -456,4 +455,167 @@ line-height: 39.51px;
   .footer-img-links:hover{
     transition: 0.5s;
     transform: scale(1.5);
+  }
+
+
+
+  .hide{
+    display: none;
+  }
+
+  /* Responsive Style */
+  @media screen and (max-width:390px) {
+    *{
+    }
+   
+    .nav-container{
+      display: none;
+    }
+    #school{
+      display: none;
+    }
+    .contact-button{
+      display: none;
+    }
+    nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .header{
+      border-bottom: 0.5px solid rgb(254, 163, 1);
+    }
+
+
+
+
+    /* banner */
+.banner-container{
+}
+  .banner{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+  }
+    .banner-main-text{
+      font-size: 32px;
+      font-weight: 700;
+    }
+    #banner-paragraph{
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .enroll-button{
+      width: 131px;
+      height: 42px;
+      font-size: 16px;
+    }
+
+
+
+
+    /* Standard Curriculum */
+    .div-container{
+      display: flex;
+      text-align: center;
+      margin: 0 16.6px;
+    }
+    .button-container{
+      display:none;
+    }
+    .div-contains{
+      display: flex;
+      flex-direction: column;
+    }
+
+
+
+
+
+
+    /* our Stories */
+    .our-stories{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+    .our-stories-headline{
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .story-card1{
+      display: none;
+    }
+    .story-container{
+      width: 358px;
+    }
+    .story2-5-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2px;
+      margin: auto;
+    }
+    .stories-img{
+      width: 190.27px;
+      margin: auto;
+      padding-right: 17px;
+    }
+    .story-card2-5{
+      position: relative;
+      right: 6px;
+      width: 174.09px;
+      height: 190.59px;
+      border-radius: 16px;
+      background: white;
+      
+    }
+    .story-card-contains{
+      display: flex;
+      flex-direction:column;
+      text-align: center;
+    }
+
+    .story2-5-headlines{
+      position:relative;
+      bottom: 25px;
+      font-size: 9.13px;
+      font-weight: 700;
+    }
+    .view-all-button{
+      padding-bottom: 30px;
+      width: 134px;
+      height: 30px;
+      font-size: 16px;
+    }
+    .date2{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 10px;
+      bottom: 25px;
+      width: 100px;
+      height: 30px;
+      border-radius: 47.93px;
+      background: rgb(149, 178, 38);
+      font-size: 10px;
+      font-weight: 700;
+    }
+
+
+
+
+    
+
+    /* Footer */
+
+
+
+
+
   }
